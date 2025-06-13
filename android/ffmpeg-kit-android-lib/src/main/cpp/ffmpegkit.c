@@ -873,7 +873,7 @@ JNIEXPORT int JNICALL Java_com_arthenica_ffmpegkit_FFmpegKitConfig_registerNewNa
  */
 JNIEXPORT jstring JNICALL Java_com_arthenica_ffmpegkit_FFmpegKitConfig_getNativeBuildDate(JNIEnv *env, jclass object) {
     char buildDate[10];
-    sprintf(buildDate, "%d", FFMPEG_KIT_BUILD_DATE);
+    sprintf(buildDate, "%d", 0);
     return (*env)->NewStringUTF(env, buildDate);
 }
 
