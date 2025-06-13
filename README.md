@@ -1,4 +1,4 @@
-In `pubspec.yaml`:
+## For `Flutter`, In `pubspec.yaml`:
 ```bash
   # --- Use custom fork of ffmpeg-kit with fix for v1 embedding build failure ---
   ffmpeg_kit_flutter:
@@ -7,6 +7,55 @@ In `pubspec.yaml`:
       path: flutter/flutter
   # ------------------------------------
 ```
+
+---
+
+
+## Build the `aar` from source:
+
+- Use this command to build the `aar` file:
+```bash
+./android.sh --disable-x86 --disable-x86-64 --disable-arm-v7a-neon --enable-openssl --enable-freetype --enable-lame --enable-libiconv --enable-libtheora --enable-libvorbis --enable-libvpx --enable-libwebp --enable-opus --enable-soxr --enable-libpng --enable-jpeg --enable-zimg --enable-x264 --enable-gpl --enable-android-media-codec --api-level=28
+```
+
+- Use this NDK for compatibility: 
+```bash
+android-ndk-r25c
+```
+
+---
+
+### Setting NDK paths on Linux before using the above build command: `(Step by Step guide)`
+Run these commands in `BASH` shell:
+```bash
+unset ANDROID_NDK_ROOT
+export ANDROID_NDK_HOME=/home/USERNAME/android-ndk-r25c
+export NDK=/home/USERNAME/android-ndk-r25c
+export PATH=/home/USERNAME/android-ndk-r25c:/home/USERNAME/android-ndk-r25c/toolchains/llvm/prebuilt/linux-x86_64/bin:$PATH
+export ANDROID_NDK_ROOT=/home/USERNAME/android-ndk-r25c
+```
+_replace `USERNAME` with your desktop username_
+
+- `cd` to the root directory of this repo, and there you need to run the commands.
+- Now run the build command to start the process.
+- To see live logs, in another terminal run `tail -f build.log` which will show live logs of whole build process.
+- After that run these commands for confirmation:
+```bash
+echo $ANDROID_NDK_HOME
+echo $NDK
+which ndk-build
+```
+
+Build will take a lot of time so wait for its completion and then the `aar` file will be saved.
+
+---
+
+
+
+
+
+
+
 
 
 <details>
