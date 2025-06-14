@@ -1,6 +1,12 @@
 > [!TIP]
 > If you want to upload your app to `F-Droid`, this is the correct fork as reproducible patches are already applied in [v1.2 release](https://github.com/anonfaded/ffmpeg-kit/releases/tag/v2.0)
 
+<div align=center>
+  
+[![GitHub all releases](https://img.shields.io/github/downloads/anonfaded/ffmpeg-kit/total?label=Downloads&logo=github)](https://github.com/anonfaded/ffmpeg-kit/releases/)
+
+</div>
+
 ---
 
 ## For `Flutter`, In `pubspec.yaml`:
