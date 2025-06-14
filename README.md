@@ -1,6 +1,7 @@
 > [!TIP]
 > If you want to upload your app to `F-Droid`, this is the correct fork as reproducible patches are already applied in [v1.2 release](https://github.com/anonfaded/ffmpeg-kit/releases/tag/v2.0)
 
+---
 
 ## For `Flutter`, In `pubspec.yaml`:
 ```bash
