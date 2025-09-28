@@ -1,3 +1,9 @@
+> [!WARNING]
+> This repo is outdated, check the latest version here: https://github.com/fadsec-lab/ffmpeg-kit-16KB
+
+<details>
+ <summary>Outdated Readme</summary>
+
 > [!TIP]
 > If you want to upload your app to `F-Droid`, this is the correct fork as reproducible patches are already applied in [v1.2 release](https://github.com/anonfaded/ffmpeg-kit/releases/tag/v2.0)
 
@@ -61,7 +67,7 @@ Build will take a lot of time so wait for its completion and then the `aar` file
 
 ---
 
-
+</details>
 
 
 
